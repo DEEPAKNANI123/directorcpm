@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+.auth-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f6f8fa;
+}
+
+.auth-left {
+  flex: 1;
+  background: linear-gradient(135deg, #1a1f2e 0%, #2f364a 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.auth-left h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.auth-left p {
+  font-size: 20px;
+  color: #a3b1cc;
+  max-width: 400px;
+}
+
+.auth-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f6f8fa;
+}
+
+.auth-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(140,149,159,0.2);
+  width: 100%;
+  max-width: 440px;
+  border: 1px solid #d0d7de;
+}
+
+.auth-card h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #24292f;
+  margin-top: 0;
+}
+
+.auth-input, .auth-select {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #24292f;
+  background-color: #f6f8fa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-input:focus, .auth-select:focus {
+  outline: none;
+  border-color: #00B2EC;
+  box-shadow: 0 0 0 3px rgba(0, 178, 236, 0.2);
+  background-color: #ffffff;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #1a7f37;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 8px;
+}
+
+.auth-btn:hover {
+  background-color: #125e27;
+}
+
+.auth-btn:disabled {
+  background-color: #94d3a2;
+  cursor: not-allowed;
+}
+
+.auth-card p {
+  text-align: center;
+  color: #57606a;
+  font-size: 14px;
+}
+
+.auth-card a {
+  color: #00B2EC;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}
